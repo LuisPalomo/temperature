@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from '../app/component/app.component';
-import { AppService } from './app.service';
-import { FahrToCentPipe } from './../pipes/FahrToCent.pipe';
-import { AngularMaterialModule } from '../modules/angular-material.module';
+import { AppComponent } from './app.component';
+import { AppService } from './services/app.service';
+import { FahrToCentPipe } from './pipes/FahrToCent.pipe';
+import { AngularMaterialModule } from './modules/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,6 @@ import { AngularMaterialModule } from '../modules/angular-material.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
     AngularMaterialModule,
     HttpClientModule
   ],

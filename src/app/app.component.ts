@@ -1,8 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { AppService } from './../app.service';
-import { City } from '../../models/city.model';
 import { MatTableDataSource, MatSelectChange, MatPaginator, MatSort, MatProgressSpinnerModule } from '@angular/material';
-import { Temperature } from '../../models/temperature.model';
+
+import { AppService } from './services/app.service';
+import { City, Temperature } from './models';
 
 @Component({
   selector: 'app-root',
