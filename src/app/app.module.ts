@@ -6,13 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppService } from './services/app.service';
-import { FahrToCentPipe } from './pipes/FahrToCent.pipe';
+import { KelvinToCelsiusPipe } from './pipes/kelvin-to-celsius.pipe';
 import { AngularMaterialModule } from './modules/angular-material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FahrToCentPipe
+    KelvinToCelsiusPipe
   ],
   imports: [
     BrowserModule,

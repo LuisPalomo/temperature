@@ -18,7 +18,7 @@
         <!-- Value Column -->
         <ng-container matColumnDef="temperature">
           <mat-header-cell *matHeaderCellDef mat-sort-header>Temp (ºC)</mat-header-cell>
-          <mat-cell *matCellDef="let element">{{element?.value | fahrToCent | number : '1.2-2'}}</mat-cell>
+          <mat-cell *matCellDef="let element">{{element?.value | kelvinToCelsius | number : '1.2-2'}}</mat-cell>
         </ng-container>
 
         <!-- Date Column -->
